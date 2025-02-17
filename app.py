@@ -77,13 +77,12 @@ def analyze_candidate_responses(file_path, prompt):
     payload = {
         "messages": [
             {"role": "system", "content": "You are an AI assistant analyzing a candidate's skill assessment."},
-            {"role": "user", "content": custom_prompt}
+            {"role": "user", "content": prompt}  # Use prompt directly here
         ],
         "max_tokens": 500,
         "temperature": 0.7,
         "top_p": 0.9
     }
-
     headers = {
         'Content-Type': 'application/json',
         'api-key': API_KEY
@@ -102,7 +101,6 @@ def analyze_candidate_responses(file_path, prompt):
         st.error(f"Error analyzing the responses: {e}")
         return None
 
-# Streamlit UI
 # Streamlit UI
 st.title("Candidate Skill Assessment Analysis")
 
@@ -150,8 +148,8 @@ if os.path.exists(file_path):
     if st.button("Analyze"):
         st.write("Analyzing...")
 
-        # If the user has modified the input, use their custom prompt; otherwise, use the default one
-        prompt_to_use = custom_prompt
+        # Ensure we use the value from the input field, which is `custom_prompt`
+        prompt_to_use = custom_prompt  # This will always be the latest user input
 
         # Call the function to analyze the responses, passing in the appropriate prompt
         analysis = analyze_candidate_responses(file_path, prompt_to_use)
