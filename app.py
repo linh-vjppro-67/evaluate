@@ -108,7 +108,7 @@ def main():
     st.write("This app analyzes candidate responses based on the default `data.json` file.")
     
     # Default file path
-    file_path = './20cau.json'
+    file_path = './data.json'
 
     # Check if the file exists
     if os.path.exists(file_path):
