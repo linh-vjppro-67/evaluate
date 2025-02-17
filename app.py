@@ -77,7 +77,7 @@ def analyze_candidate_responses(file_path, prompt):
     payload = {
         "messages": [
             {"role": "system", "content": "You are an AI assistant analyzing a candidate's skill assessment."},
-            {"role": "user", "content": prompt}
+            {"role": "user", "content": custom_prompt}
         ],
         "max_tokens": 500,
         "temperature": 0.7,
