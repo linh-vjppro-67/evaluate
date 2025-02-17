@@ -103,6 +103,7 @@ def analyze_candidate_responses(file_path, prompt):
         return None
 
 # Streamlit UI
+# Streamlit UI
 st.title("Candidate Skill Assessment Analysis")
 
 # Hardcoded path to the local file
@@ -149,8 +150,11 @@ if os.path.exists(file_path):
     if st.button("Analyze"):
         st.write("Analyzing...")
 
-        # Call the function to analyze the responses, passing in the custom prompt
-        analysis = analyze_candidate_responses(file_path, custom_prompt)
+        # If the user has modified the input, use their custom prompt; otherwise, use the default one
+        prompt_to_use = custom_prompt if custom_prompt.strip() else default_prompt
+
+        # Call the function to analyze the responses, passing in the appropriate prompt
+        analysis = analyze_candidate_responses(file_path, prompt_to_use)
 
         if analysis:
             st.subheader("Analysis Result:")
