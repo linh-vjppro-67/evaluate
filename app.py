@@ -145,6 +145,7 @@ if os.path.exists(file_path):
 
     # Input for custom prompt (default text can be modified by the user)
     custom_prompt = st.text_area("Edit the prompt (default is provided below):", default_prompt, height=250)
+    st.write(custom_prompt)
 
     # Button to trigger analysis
     if st.button("Analyze"):
