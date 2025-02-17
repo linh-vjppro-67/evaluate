@@ -153,8 +153,11 @@ if os.path.exists(file_path):
     if st.button("Analyze"):
         st.write("Analyzing...")
 
+        # Use custom_prompt if user changed the default prompt
+        prompt_to_use = custom_prompt if custom_prompt != default_prompt else default_prompt
+
         # Call the function to analyze the responses
-        analysis = analyze_candidate_responses(file_path, custom_prompt)
+        analysis = analyze_candidate_responses(file_path, prompt_to_use)
 
         if analysis:
             st.subheader("Analysis Result:")
