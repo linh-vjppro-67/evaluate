@@ -1,23 +1,18 @@
+import streamlit as st
 import json
 import os
 import requests
 from collections import defaultdict
-import streamlit as st
 
-# Get API credentials from st.secrets
+# Use secrets to access API_KEY and ENDPOINT
 API_KEY = st.secrets["AZURE_OPENAI_API_KEY"]
 ENDPOINT = st.secrets["AZURE_OPENAI_ENDPOINT"]
 
-def analyze_candidate_responses(file_path, prompt):
-    """Processes the data.json file and sends a summary request to OpenAI API"""
-    
+def generate_default_prompt(file_path):
+    """Generates the default prompt based on the contents of the data.json file"""
     # Read the data.json file
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        st.error(f"File not found at the path: {file_path}")
-        return None
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
 
     # Collect general information
     job_titles = set()
@@ -32,17 +27,16 @@ def analyze_candidate_responses(file_path, prompt):
         categories.update(entry['categories'])
         skills.update(entry['skills'])
 
-        # Group correct and incorrect responses by skill and question content
+        # Group correct and incorrect responses by skill
         skill_list = entry['skills']
-        question = entry['content']  # question text
         if entry['isCorrectAnswer']:
             for skill in skill_list:
-                correct_responses[skill].append(question)
+                correct_responses[skill].append(entry['content'])
         else:
             for skill in skill_list:
-                incorrect_responses[skill].append(question)
+                incorrect_responses[skill].append(entry['content'])
 
-    # Add the user-provided prompt to the API request
+    # Generate structured prompt
     prompt = f"""
     Based on the candidate's responses, analyze their overall strengths and gaps.
 
@@ -70,19 +64,24 @@ def analyze_candidate_responses(file_path, prompt):
     **Gaps:**  
     - Needs improvement in [Skill X]  
     - Struggles with [Skill Y]  
-    - Requires more practice in [Skill Z]
+    - Requires more practice in [Skill Z]  
     """
 
-    # API request payload
+    return prompt
+
+
+def analyze_candidate_responses(custom_prompt):
+    """Sends a summary request to OpenAI API with the custom prompt"""
     payload = {
         "messages": [
             {"role": "system", "content": "You are an AI assistant analyzing a candidate's skill assessment."},
-            {"role": "user", "content": prompt}  # Use prompt directly here
+            {"role": "user", "content": custom_prompt}
         ],
         "max_tokens": 500,
         "temperature": 0.7,
         "top_p": 0.9
     }
+
     headers = {
         'Content-Type': 'application/json',
         'api-key': API_KEY
@@ -95,78 +94,41 @@ def analyze_candidate_responses(file_path, prompt):
         result = response.json()
         analysis = result.get('choices', [{}])[0].get('message', {}).get('content', '').strip()
 
+        # Return the result
         return analysis
 
     except requests.exceptions.RequestException as e:
         st.error(f"Error analyzing the responses: {e}")
         return None
 
-# Streamlit UI
-st.title("Candidate Skill Assessment Analysis")
 
-# Hardcoded path to the local file
-file_path = './data.json'
+def main():
+    # Streamlit UI layout
+    st.title("Candidate Response Analysis")
+    st.write("This app analyzes candidate responses based on the default `data.json` file.")
+    
+    # Default file path
+    file_path = './20cau.json'
 
-if os.path.exists(file_path):
-    st.write("File found! Ready to analyze the responses.")
+    # Check if the file exists
+    if os.path.exists(file_path):
+        # Generate the default prompt based on the content of the file
+        default_prompt = generate_default_prompt(file_path)
+    else:
+        st.error(f"The file `{file_path}` does not exist in the current directory.")
+        return
 
-    # Define the default prompt text (pre-filled in the input)
-    default_prompt = """
-    Based on the candidate's responses, analyze their overall strengths and gaps.
+    # Allow user to modify the prompt
+    custom_prompt = st.text_area("Edit the AI prompt for analysis:", default_prompt, height=300)
 
-    **Job Titles:** {job_titles}  
-    **Skill Categories:** {categories}  
-    **Skills Assessed:** {skills}
-
-    ### **Instructions for AI:**  
-    - Summarize the candidate’s **Strengths**: areas where they performed well.  
-    - Summarize the candidate’s **Gaps**: areas where improvement is needed.  
-    - Focus on skill-level insights, **do NOT** generate a separate strength/gap for each individual question.  
-
-    ### **Questions Candidate Answered Correctly:**  
-    {correct_responses}
-
-    ### **Questions Candidate Answered Incorrectly:**  
-    {incorrect_responses}
-
-    ### **Expected Output Format (markdown):**
-    **Strengths:**  
-    - Well-versed in [Skill A]  
-    - Strong understanding of [Skill B]  
-    - Proficient in applying [Skill C]  
-
-    **Gaps:**  
-    - Needs improvement in [Skill X]  
-    - Struggles with [Skill Y]  
-    - Requires more practice in [Skill Z]
-    """
-
-    # Input for custom prompt (default text can be modified by the user)
-    custom_prompt = st.text_area("Edit the prompt (default is provided below):", default_prompt, height=250)
-
-    # Button to trigger analysis
+    # Provide a button to start the analysis
     if st.button("Analyze"):
-        st.write("Analyzing...")
+        with st.spinner("Analyzing responses..."):
+            analysis_result = analyze_candidate_responses(custom_prompt)
+            if analysis_result:
+                st.subheader("Analysis Result:")
+                st.write(analysis_result)
 
-        # Ensure we use the value from the input field, which is `custom_prompt`
-        prompt_to_use = custom_prompt  # This will always be the latest user input
 
-        # Call the function to analyze the responses, passing in the appropriate prompt
-        analysis = analyze_candidate_responses(file_path, prompt_to_use)
-
-        if analysis:
-            st.subheader("Analysis Result:")
-            st.markdown(analysis)
-            # Optionally, save the result to a file
-            with open("overall_analysis.txt", "w", encoding="utf-8") as f:
-                f.write(analysis)
-            st.download_button(
-                label="Download Analysis",
-                data=open("overall_analysis.txt", "r").read(),
-                file_name="overall_analysis.txt",
-                mime="text/plain"
-            )
-        else:
-            st.warning("No analysis result available.")
-else:
-    st.error(f"The file {file_path} does not exist. Please check the path.")
+if __name__ == "__main__":
+    main()
