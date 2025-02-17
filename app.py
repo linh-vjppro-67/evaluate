@@ -152,7 +152,7 @@ if os.path.exists(file_path):
         st.write("Analyzing...")
 
         # If the user has modified the input, use their custom prompt; otherwise, use the default one
-        prompt_to_use = custom_prompt if custom_prompt.strip() else default_prompt
+        prompt_to_use = custom_prompt
 
         # Call the function to analyze the responses, passing in the appropriate prompt
         analysis = analyze_candidate_responses(file_path, prompt_to_use)
