@@ -111,8 +111,39 @@ file_path = './data.json'
 if os.path.exists(file_path):
     st.write("File found! Ready to analyze the responses.")
 
-    # Input for custom prompt
-    custom_prompt = st.text_area("Edit the prompt:", height=250)
+    # Define the default prompt text (pre-filled in the input)
+    default_prompt = """
+    Based on the candidate's responses, analyze their overall strengths and gaps.
+
+    **Job Titles:** {job_titles}  
+    **Skill Categories:** {categories}  
+    **Skills Assessed:** {skills}
+
+    ### **Instructions for AI:**  
+    - Summarize the candidate’s **Strengths**: areas where they performed well.  
+    - Summarize the candidate’s **Gaps**: areas where improvement is needed.  
+    - Focus on skill-level insights, **do NOT** generate a separate strength/gap for each individual question.  
+
+    ### **Questions Candidate Answered Correctly:**  
+    {correct_responses}
+
+    ### **Questions Candidate Answered Incorrectly:**  
+    {incorrect_responses}
+
+    ### **Expected Output Format (markdown):**
+    **Strengths:**  
+    - Well-versed in [Skill A]  
+    - Strong understanding of [Skill B]  
+    - Proficient in applying [Skill C]  
+
+    **Gaps:**  
+    - Needs improvement in [Skill X]  
+    - Struggles with [Skill Y]  
+    - Requires more practice in [Skill Z]
+    """
+
+    # Input for custom prompt (default text can be modified by the user)
+    custom_prompt = st.text_area("Edit the prompt (default is provided below):", default_prompt, height=250)
 
     # Button to trigger analysis
     if st.button("Analyze"):
