@@ -5,8 +5,8 @@ from collections import defaultdict
 import streamlit as st
 
 # Get API credentials from st.secrets
-API_KEY = st.secrets["azure"]["AZURE_OPENAI_API_KEY"]
-ENDPOINT = st.secrets["azure"]["AZURE_OPENAI_ENDPOINT"]
+API_KEY = st.secrets["AZURE_OPENAI_API_KEY"]
+ENDPOINT = st.secrets["AZURE_OPENAI_ENDPOINT"]
 
 def analyze_candidate_responses(file_path, prompt):
     """Processes the data.json file and sends a summary request to OpenAI API"""
