@@ -1,0 +1,995 @@
+[
+    {
+        "questionId": "1e0eb22c-65e9-40d3-9f35-e84cefd421ee",
+        "content": "Which of the following are types of database relationships in a relational database?",
+        "userAnswer": [
+            "One-to-One",
+            "Many-to-Many",
+            "One-to-Many"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "One-to-One",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Many-to-Many",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "One-to-Many",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Client-Server",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "Pair-to-Pair",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": true,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "42682dbc-ccdf-4774-a942-5f500ab3720a",
+        "content": "Which of the following are relational database management systems?",
+        "userAnswer": [
+            "MySQL",
+            "PostgreSQL",
+            "Redis"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "MySQL",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "MongoDB",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "PostgreSQL",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Redis",
+                "isAnswerKey": false,
+                "isUserAnswer": true,
+                "isCorrect": false
+            },
+            {
+                "description": "Oracle Database",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": [
+            "SQL",
+            "Relational Databases"
+        ]
+    },
+    {
+        "questionId": "9dc4b835-80f5-47d6-9d98-e0fc65781fb4",
+        "content": "Which of the following databases are considered relational databases?",
+        "userAnswer": [
+            "MySQL",
+            "PostgreSQL",
+            "SQLite"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "MySQL",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "PostgreSQL",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "MongoDB",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "SQLite",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Redis",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": true,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "bdd0424f-29b6-418d-800a-ce3abaa607f9",
+        "content": "Which of the following are objectives of database normalization?",
+        "userAnswer": [
+            "Eliminating redundant data",
+            "Ensuring data integrity",
+            "Organizing data efficiently"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Eliminating redundant data",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Ensuring data integrity",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Increasing data redundancy",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "Reducing query speed",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "Organizing data efficiently",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": true,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": [
+            "Normalization"
+        ]
+    },
+    {
+        "questionId": "09cada1d-1abc-4765-a228-691740433ba9",
+        "content": "Which of the following are valid HTML tags?",
+        "userAnswer": [
+            "<span>",
+            "<section>",
+            "<table>"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "<div>",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "<span>",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "<section>",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "<table>",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "<style>",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": [
+            "HTML",
+            "CSS"
+        ]
+    },
+    {
+        "questionId": "bbeb10e0-6e61-4925-990c-712762c286ec",
+        "content": "Which of the following are SQL JOIN types?",
+        "userAnswer": [
+            "OUTER JOIN",
+            "LEFT JOIN"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "INNER JOIN",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "OUTER JOIN",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "LEFT JOIN",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "RIGHT JOIN",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "SELECT JOIN",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "7eb37916-b90e-4525-9ddb-29c6289eb5e9",
+        "content": "Which of the following languages are commonly used in web development?",
+        "userAnswer": [
+            "CSS",
+            "JavaScript"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "HTML",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "CSS",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "JavaScript",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Python",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "C++",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "faef0660-01f4-4efa-9de6-65f1f3162201",
+        "content": "Which of the following are valid JavaScript data types?",
+        "userAnswer": [
+            "Number",
+            "String",
+            "Boolean",
+            "Object"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Number",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "String",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Boolean",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Float",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "Object",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": true,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": [
+            "JavaScript"
+        ]
+    },
+    {
+        "questionId": "6e369fe0-afcd-4376-aec9-ce6eaa602921",
+        "content": "Which of the following are frontend frameworks?",
+        "userAnswer": [
+            "Angular",
+            "React",
+            "Vue.js"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Angular",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "React",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Vue.js",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Spring",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "Django",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": true,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "3f4c3425-9215-48d2-842a-9434ddbfe3d3",
+        "content": "Which of these SQL statements are related to data modification?",
+        "userAnswer": [
+            "DELETE",
+            "SELECT",
+            "ALTER"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "INSERT",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "UPDATE",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "DELETE",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "SELECT",
+                "isAnswerKey": false,
+                "isUserAnswer": true,
+                "isCorrect": false
+            },
+            {
+                "description": "ALTER",
+                "isAnswerKey": false,
+                "isUserAnswer": true,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": [
+            "SQL"
+        ]
+    },
+    {
+        "questionId": "68dfb24f-2959-461e-b21b-c10ab708b8ba",
+        "content": "Which of the following HTML elements are used for creating lists?",
+        "userAnswer": [
+            "<ol>",
+            "<li>"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "<ul>",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "<ol>",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "<li>",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "<p>",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "<table>",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": [
+            "HTML"
+        ]
+    },
+    {
+        "questionId": "e158b9e0-12b3-47ae-9dd8-3e40cce122ba",
+        "content": "Which operations are considered basic CRUD operations in databases?",
+        "userAnswer": [
+            "Read",
+            "Delete"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Create",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Read",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Update",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Delete",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Analyze",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "2c76b386-eb73-4b52-ba8a-b9058daea02f",
+        "content": "Which of the following are web servers?",
+        "userAnswer": [
+            "Nginx",
+            "IIS"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Apache",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Nginx",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "IIS",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Tomcat",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Redis",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "06dddf80-53d8-4dc5-9068-a2a33da8af69",
+        "content": "What are benefits of using indexes in a database?",
+        "userAnswer": [
+            "Reduced data storage requirements",
+            "Increased complexity of queries"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Faster data retrieval",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Reduced data storage requirements",
+                "isAnswerKey": false,
+                "isUserAnswer": true,
+                "isCorrect": false
+            },
+            {
+                "description": "Improved query performance",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Increased complexity of queries",
+                "isAnswerKey": false,
+                "isUserAnswer": true,
+                "isCorrect": false
+            },
+            {
+                "description": "Organized data for efficient access",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": [
+            "Indexes"
+        ]
+    },
+    {
+        "questionId": "ca68db1e-185e-4ef7-9294-53198f9a17ab",
+        "content": "Which of the following are valid CSS properties?",
+        "userAnswer": [
+            "color",
+            "background-color",
+            "font-size"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "color",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "background-color",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "font-size",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "margin-style",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "padding",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": [
+            "CSS"
+        ]
+    },
+    {
+        "questionId": "d24c4259-44ef-4619-a92f-1194161522b1",
+        "content": "Which of the following statements are true about primary keys in a database table?",
+        "userAnswer": [
+            "A table can have multiple primary keys.",
+            "A primary key can be a composite key."
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "A primary key must be unique.",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "A primary key cannot be NULL.",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "A table can have multiple primary keys.",
+                "isAnswerKey": false,
+                "isUserAnswer": true,
+                "isCorrect": false
+            },
+            {
+                "description": "A primary key can be a composite key.",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Primary keys are only used in NoSQL databases.",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "b1c86cac-f540-4e1f-a925-35c8ce7d9819",
+        "content": "Which of the following protocols are used for Web Development?",
+        "userAnswer": [
+            "HTTP",
+            "HTTPS",
+            "FTP"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "HTTP",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "HTTPS",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "FTP",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "SMTP",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "SSH",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": true,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "460a9cc6-a8f1-44a4-a043-bf2a1757f16b",
+        "content": "Which of the following properties are part of the ACID model?",
+        "userAnswer": [
+            "Consistency",
+            "Isolation"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "Atomicity",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "Consistency",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Isolation",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "Dependency",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "Durability",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": [
+            "Transactions"
+        ]
+    },
+    {
+        "questionId": "783fcb1d-93f2-49ff-be90-ab3234957a75",
+        "content": "What are common data types used in SQL databases?",
+        "userAnswer": [
+            "INTEGER",
+            "VARCHAR"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "INTEGER",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "VARCHAR",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "BOOLEAN",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "DATETIME",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "STRINGBUFFER",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Java Software Engineer",
+        "categories": [
+            "Database Management"
+        ],
+        "skills": []
+    },
+    {
+        "questionId": "cc195a8a-3d45-4ba5-97e3-a5c6bdbbf5d9",
+        "content": "Which of the following are valid HTTP methods?",
+        "userAnswer": [
+            "POST",
+            "PUT"
+        ],
+        "type": "MultiChoice",
+        "options": [
+            {
+                "description": "GET",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            },
+            {
+                "description": "POST",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "PUT",
+                "isAnswerKey": true,
+                "isUserAnswer": true,
+                "isCorrect": true
+            },
+            {
+                "description": "FETCH",
+                "isAnswerKey": false,
+                "isUserAnswer": false,
+                "isCorrect": true
+            },
+            {
+                "description": "DELETE",
+                "isAnswerKey": true,
+                "isUserAnswer": false,
+                "isCorrect": false
+            }
+        ],
+        "isCorrectAnswer": false,
+        "levels": "Junior",
+        "jobTitle": "Junior Java Software Engineer",
+        "categories": [
+            "Web Development"
+        ],
+        "skills": [
+            "HTTP"
+        ]
+    }
+]

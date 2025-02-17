@@ -1,0 +1,10 @@
+**Strengths:**  
+- Well-versed in Normalization: The candidate demonstrated a strong understanding of the objectives of database normalization, indicating a solid grasp of this concept within database management.  
+- Strong understanding of JavaScript: The candidate correctly identified valid JavaScript data types, showcasing their proficiency with this programming language.  
+
+**Gaps:**  
+- Needs improvement in SQL: The candidate struggled with identifying relational database management systems and SQL statements related to data modification, suggesting a gap in their SQL knowledge.  
+- Struggles with Relational Databases: The candidate had difficulty recognizing relational database management systems, indicating a need for better comprehension in this area.  
+- Requires more practice in HTML and CSS: The candidate incorrectly identified valid HTML tags and CSS properties, suggesting a need for further study in web development fundamentals.  
+- Lacks understanding of Indexes and Transactions: The candidate showed a lack of understanding of the benefits of database indexes and the properties of the ACID model, indicating these are areas for growth.  
+- Needs familiarity with HTTP: The candidate struggled with identifying valid HTTP methods, suggesting a need to strengthen their knowledge of web protocols.
